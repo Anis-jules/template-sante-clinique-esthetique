@@ -1,0 +1,94 @@
+import { defineConfig, type Plugin } from 'vite';
+import react from '@vitejs/plugin-react';
+import { fileURLToPath, URL } from 'node:url';
+import content from './src/content.json';
+
+// ─── Hostivo — SEO & branding depuis content.json, injectés au build ───
+// index.html reste une coquille statique : ce plugin fait de content.json la
+// SEULE source de vérité pour le <head>. Sans lui, chaque site né de ce moule
+// hériterait du titre et de la description du cabinet d'origine — le défaut
+// qui a mis « Bene Coach NutriSport » en ligne le 25/08/2026.
+//
+// Adaptation à CE moule : l'identité vit dans la section `cabinet` (name,
+// phone, emailInternal, adresse en champs séparés), le SEO dans `seo`.
+type Dict = Record<string, unknown>;
+const asDict = (v: unknown): Dict => (v && typeof v === 'object' ? (v as Dict) : {});
+const asText = (v: unknown): string => (typeof v === 'string' ? v.trim() : '');
+
+function seoFromContentJson(): Plugin {
+  const c = content as unknown as Dict;
+  const seo = asDict(c.seo) as Record<string, string>;
+  const theme = asDict(c.theme) as Record<string, string>;
+  const cab = asDict(c.cabinet);
+
+  const siteUrl = (process.env.URL ?? '').replace(/\/$/, '');
+  const absolu = (u: string) =>
+    /^https?:\/\//.test(u) ? u : siteUrl ? siteUrl + (u.startsWith('/') ? u : `/${u}`) : '';
+
+  const nom = asText(cab.name) || asText(seo.titre_page) || 'Hostivo';
+  const initiale = (nom.replace(/[^\p{L}\p{N}]/gu, '')[0] ?? 'H').toUpperCase();
+  const couleur = asText(theme.couleur_bouton) || asText(theme.couleur_titre) || '#3B30E5';
+  const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="${couleur}"/><text x="32" y="43" font-family="Georgia,serif" font-size="34" font-weight="700" text-anchor="middle" fill="#ffffff">${initiale}</text></svg>`;
+  const faviconTag = `<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,${encodeURIComponent(faviconSvg)}" />`;
+
+  // Règle Hostivo : sans visuel fourni par le client, aucune balise d'image.
+  const imageBrute = asText(seo.og_image) || asText(asDict(cab.photos).hero);
+  const ogImage = imageBrute ? absolu(imageBrute) : '';
+
+  const jsonLd: Record<string, unknown> = { '@context': 'https://schema.org', '@type': 'Dentist', name: nom };
+  if (seo.meta_description) jsonLd.description = seo.meta_description;
+  if (asText(cab.phone)) jsonLd.telephone = asText(cab.phone);
+  if (asText(cab.emailInternal)) jsonLd.email = asText(cab.emailInternal);
+  if (siteUrl) jsonLd.url = siteUrl;
+  if (ogImage) jsonLd.image = ogImage;
+  const rue = asText(cab.addressStreet);
+  const cp = asText(cab.addressPostalCode);
+  const ville = asText(cab.addressLocality);
+  if (rue || cp || ville) {
+    jsonLd.address = {
+      '@type': 'PostalAddress',
+      ...(rue ? { streetAddress: rue } : {}),
+      ...(cp ? { postalCode: cp } : {}),
+      ...(ville ? { addressLocality: ville } : {}),
+      addressCountry: 'FR',
+    };
+  }
+
+  return {
+    name: 'seo-from-content-json',
+    transformIndexHtml(html) {
+      html = html
+        .replace(/[ \t]*<link[^>]*rel="[^"]*icon[^"]*"[^>]*>\s*\n?/gi, '')
+        .replace(/[ \t]*<meta property="og:image"[^>]*>\s*\n?/gi, '')
+        .replace(/[ \t]*<meta property="og:url"[^>]*>\s*\n?/gi, '')
+        .replace(/[ \t]*<link rel="canonical"[^>]*>\s*\n?/gi, '')
+        .replace(/[ \t]*<script type="application\/ld\+json">[\s\S]*?<\/script>\s*\n?/gi, '');
+      html = html
+        .replace(/<title>.*?<\/title>/, `<title>${seo.titre_page ?? nom}</title>`)
+        .replace(/(<meta name="description" content=")[^"]*(")/, `$1${seo.meta_description ?? ''}$2`)
+        .replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${seo.og_titre ?? seo.titre_page ?? nom}$2`)
+        .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${seo.og_description ?? seo.meta_description ?? ''}$2`);
+      const tags = [
+        faviconTag,
+        siteUrl ? `<link rel="canonical" href="${siteUrl}/" />` : '',
+        siteUrl ? `<meta property="og:url" content="${siteUrl}/" />` : '',
+        ogImage ? `<meta property="og:image" content="${ogImage}" />` : '',
+        `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`,
+      ].filter(Boolean).map((t) => `    ${t}`).join('\n');
+      return html.replace(/\s*<\/head>/, `\n${tags}\n  </head>`);
+    },
+  };
+}
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react(), seoFromContentJson()],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
+  optimizeDeps: {
+    exclude: ['lucide-react'],
+  },
+});

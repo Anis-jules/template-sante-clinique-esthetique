@@ -1,0 +1,2 @@
+# routage SPA : toute URL sert index.html, react-router prend le relais
+/*    /index.html   200

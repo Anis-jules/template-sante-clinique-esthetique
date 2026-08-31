@@ -1,0 +1,667 @@
+{
+  "seo": {
+    "titre_page": "Cabinet dentaire — soins, esthétique et implantologie",
+    "meta_description": "Cabinet dentaire : soins conservateurs, esthétique du sourire, implantologie et parodontie. Prise de rendez-vous en ligne.",
+    "og_titre": "Cabinet dentaire",
+    "og_description": "Soins dentaires, esthétique du sourire et implantologie.",
+    "og_image": ""
+  },
+  "theme": {
+    "couleur_bouton": "#9B5050",
+    "couleur_titre": "#161412"
+  },
+  "appointmentButton": {
+    "label": "Prendre rendez-vous"
+  },
+  "cookieBanner": {
+    "text": "Ce site utilise des cookies nécessaires à son fonctionnement et des cookies de mesure d'audience anonyme. Vous pouvez choisir de les accepter ou de les refuser.",
+    "decline": "Refuser",
+    "accept": "Accepter",
+    "close": "Fermer"
+  },
+  "footer": {
+    "navTitle": "Navigation",
+    "cabinetTitle": "Le cabinet",
+    "contactTitle": "Contact",
+    "consultationHours": "Consultations sur rendez-vous",
+    "rightsReserved": "Tous droits réservés",
+    "siretLabel": "SIRET"
+  },
+  "header": {
+    "ariaHome": "Retour à l'accueil",
+    "ariaOpenMenu": "Ouvrir le menu",
+    "ariaCloseMenu": "Fermer le menu"
+  },
+  "photoPlaceholder": {
+    "logoName": "Cabinet dentaire",
+    "logoSubtitle": "Chirurgien-dentiste"
+  },
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "Le praticien",
+      "titlePrefix": "Le Cabinet dentaire, chirurgien-dentiste à ",
+      "subtitle": "Pratique de l'esthétique, de l'implantologie et de la parodontologie, avec une attention portée à la globalité du traitement."
+    },
+    "bio": {
+      "label": "Présentation",
+      "title": "Un parcours dédié à la santé et à l'esthétique du sourire",
+      "paragraph1": "Le Cabinet dentaire exerce en tant que chirurgien-dentiste à votre ville. Sa pratique s'articule autour de trois domaines : l'esthétique dentaire, l'implantologie et la parodontologie.",
+      "paragraph2": "Chaque prise en charge s'inscrit dans une réflexion globale : les choix thérapeutiques sont guidés par la situation clinique du patient, ses besoins et la préservation de sa santé bucco-dentaire sur le long terme. Cette approche vise à proposer un traitement adapté, sans précipitation ni surenchère.",
+      "paragraph3": "Le cabinet accueille les patients souhaitant prendre en main la santé et l'esthétique de leur sourire, dans un cadre calme et professionnel.",
+      "portraitAlt": "Cabinet dentaire, chirurgien-dentiste à votre ville"
+    },
+    "pillars": {
+      "eyebrow": "Philosophie de soin",
+      "title": "Une pratique guidée par la rigueur et la mesure",
+      "items": [
+        {
+          "icon": "HeartHandshake",
+          "title": "Une approche globale",
+          "desc": "Chaque situation est considérée dans sa globalité, afin d'inscrire le traitement dans une démarche cohérente et durable."
+        },
+        {
+          "icon": "GraduationCap",
+          "title": "Une formation continue",
+          "desc": "Le Cabinet dentaire approfondit régulièrement sa pratique dans les domaines de l'esthétique, de l'implantologie et de la parodontologie."
+        },
+        {
+          "icon": "Sparkles",
+          "title": "Une démarche mesurée",
+          "desc": "La communication et les propositions thérapeutiques restent factuelles, informatives et dénuées de toute promesse de résultat."
+        },
+        {
+          "icon": "Stethoscope",
+          "title": "Un cadre apaisant",
+          "desc": "Le cabinet, à votre ville, est pensé pour offrir un environnement calme et rassurant, adapté au soin dentaire."
+        }
+      ]
+    },
+    "formation": {
+      "label": "Formation",
+      "title": "Une pratique nourrie par une formation continue",
+      "paragraph1": "Le Cabinet dentaire approfondit régulièrement ses compétences cliniques dans les domaines de l'esthétique dentaire, de l'implantologie et de la parodontologie. Cette formation continue permet de proposer des soins alignés sur les pratiques actuelles.",
+      "paragraph2": "Le détail des diplômes, universités et formations complémentaires pourra être ajouté ici. Cette section est volontairement sobre et factuelle, conformément aux règles déontologiques de la profession.",
+      "cabinetAlt": "Salle de soin du cabinet du Cabinet dentaire à votre ville"
+    },
+    "cta": {
+      "title": "Souhaitez-vous rencontrer le Cabinet dentaire ?",
+      "contactLabel": "Nous contacter"
+    }
+  },
+  "blogPage": {
+    "hero": {
+      "eyebrow": "Blog",
+      "title": "Le journal du cabinet",
+      "subtitle": "Informations pratiques et éclairages factuels sur la santé et l'esthétique dentaire. Les articles seront ajoutés prochainement."
+    },
+    "readMore": "Lire l'article",
+    "readTimeSuffix": "de lecture",
+    "note": "Le blog est en cours de constitution. Les articles seront publiés prochainement.",
+    "posts": {
+      "items": [
+        {
+          "id": "1",
+          "title": "Titre de l’article",
+          "excerpt": "Résumé de l'article, à remplacer.",
+          "date": "À paraître",
+          "readTime": "2 min",
+          "category": "Conseils"
+        }
+      ]
+    }
+  },
+  "confidentialitePage": {
+    "hero": {
+      "eyebrow": "RGPD",
+      "title": "Politique de confidentialité",
+      "subtitle": "Informations sur la collecte et le traitement des données personnelles, conformément au Règlement Général sur la Protection des Données (RGPD)."
+    },
+    "responsable": {
+      "title": "Responsable du traitement",
+      "p1_start": "Le responsable du traitement des données personnelles collectées sur ce site est ",
+      "p1_mid": ", ",
+      "p1_mid2": ", ",
+      "p1_end": ".",
+      "p2_start": "Adresse : ",
+      "p2_mid": ". Email : ",
+      "p2_mid2": ". Téléphone : ",
+      "p2_end": "."
+    },
+    "donnees": {
+      "title": "Données collectées",
+      "intro": "Les données collectées via le site sont les suivantes :",
+      "items": [
+        {
+          "label": "Formulaire de contact :",
+          "text": " nom, email, téléphone (facultatif), motif et contenu du message."
+        },
+        {
+          "label": "Cookies :",
+          "text": " cookies de fonctionnement et, le cas échéant, cookies de mesure d'audience anonyme (soumis à votre consentement)."
+        }
+      ],
+      "outro": "Les données issues d'une prise de rendez-vous via Doctolib sont traitées par Doctolib, agissant en qualité de responsable de traitement pour ce qui relève de sa plateforme."
+    },
+    "finalites": {
+      "title": "Finalités du traitement",
+      "intro": "Les données collectées sont traitées aux fins suivantes :",
+      "items": [
+        "Répondre aux demandes d'information transmises via le formulaire de contact.",
+        "Assurer le suivi des demandes entrantes par le cabinet.",
+        "Assurer le fonctionnement technique du site."
+      ]
+    },
+    "baseLegale": {
+      "title": "Base légale",
+      "text": "Le traitement des données du formulaire de contact repose sur votre consentement (article 6.1.a du RGPD), exprimé lors de l'envoi du message. Le traitement des cookies de mesure d'audience repose également sur votre consentement."
+    },
+    "duree": {
+      "title": "Durée de conservation",
+      "p1": "Les messages transmis via le formulaire de contact sont conservés le temps nécessaire au traitement de votre demande, puis archivés ou supprimés conformément aux obligations applicables.",
+      "p2": "Le consentement aux cookies est conservé dans votre navigateur pour une durée de 13 mois, conformément aux recommandations de la CNIL."
+    },
+    "destinataires": {
+      "title": "Destinataires des données",
+      "p1_start": "Les données sont destinées au cabinet ",
+      "p1_end": " et à son personnel habilité. Elles ne font l'objet d'aucune communication à des tiers à des fins commerciales.",
+      "p2": "Le prestataire d'hébergement et la plateforme Doctolib peuvent accéder aux données strictement nécessaires à l'exécution de leurs services, dans le cadre de leurs propres obligations."
+    },
+    "droits": {
+      "title": "Vos droits",
+      "intro": "Conformément au RGPD, vous disposez des droits suivants concernant vos données personnelles :",
+      "items": [
+        "Droit d'accès à vos données.",
+        "Droit de rectification des données inexactes.",
+        "Droit à l'effacement (« droit à l'oubli »).",
+        "Droit à la limitation du traitement.",
+        "Droit d'opposition au traitement.",
+        "Droit à la portabilité de vos données.",
+        "Droit de retirer votre consentement à tout moment."
+      ],
+      "p1_start": "Pour exercer ces droits, vous pouvez contacter le cabinet par email à ",
+      "p1_mid": " ou par téléphone au ",
+      "p1_end": ".",
+      "p2": "Vous pouvez également introduire une réclamation auprès de la CNIL (www.cnil.fr/fr/plaintes) si vous estimez que vos droits ne sont pas respectés."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "text": "Le site utilise des cookies nécessaires à son fonctionnement technique. Un bandeau vous permettant d'accepter ou de refuser les cookies de mesure d'audience est affiché lors de votre première visite. Vous pouvez modifier votre choix à tout moment en supprimant les cookies de votre navigateur."
+    },
+    "securite": {
+      "title": "Sécurité",
+      "text": "Le cabinet met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre l'accès non autorisé, la perte ou la divulgation."
+    },
+    "footerLinks": {
+      "mentions": "Mentions légales",
+      "contact": "Contact"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Prendre contact avec le cabinet",
+      "subtitle": "Une question, une demande d'information ou un projet de soin ? Écrivez au cabinet ou prenez rendez-vous en ligne."
+    },
+    "subjects": {
+      "items": [
+        "Soins",
+        "Esthétique dentaire",
+        "Éclaircissement (blanchiment)",
+        "Implantologie",
+        "Parodontologie",
+        "Autre demande"
+      ]
+    },
+    "form": {
+      "nameLabel": "Nom *",
+      "namePlaceholder": "Votre nom",
+      "phoneLabel": "Téléphone",
+      "phonePlaceholder": "06 00 00 00 00",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "",
+      "subjectLabel": "Motif",
+      "subjectDefaultOption": "Sélectionner un motif…",
+      "messageLabel": "Message *",
+      "messagePlaceholder": "Décrivez votre demande…",
+      "submitDefault": "Envoyer le message",
+      "submitting": "Envoi en cours…",
+      "privacyText": "Les informations transmises sont traitées conformément à notre",
+      "privacyLinkText": "politique de confidentialité"
+    },
+    "errorMessage": "Une erreur est survenue lors de l'envoi du message. Merci de réessayer ou de nous contacter par téléphone.",
+    "success": {
+      "title": "Message envoyé",
+      "message": "Merci pour votre message. Le cabinet vous répondra dans les meilleurs délais.",
+      "button": "Envoyer un autre message"
+    },
+    "coordonnees": {
+      "title": "Coordonnées"
+    },
+    "hours": {
+      "title": "Horaires"
+    },
+    "payment": {
+      "title": "Paiement"
+    },
+    "map": {
+      "title": "Localisation du cabinet — votre ville"
+    }
+  },
+  "faqPage": {
+    "hero": {
+      "eyebrow": "FAQ",
+      "title": "Questions fréquentes",
+      "subtitle": "Quelques repères factuels sur les prestations et le fonctionnement du cabinet. Pour un avis personnalisé, la consultation reste nécessaire."
+    },
+    "items": [
+      {
+        "q": "Comment prendre rendez-vous au cabinet ?",
+        "a": "Les rendez-vous se prennent en ligne via Doctolib. Vous pouvez réserver un créneau directement depuis le bouton « Prendre rendez-vous » présent sur le site. En cas de difficulté, vous pouvez également contacter le cabinet par téléphone."
+      },
+      {
+        "q": "Quels sont les moyens de paiement acceptés ?",
+        "a": "Le cabinet accepte le paiement par carte bancaire et par virement. Les chèques et les espèces ne sont pas acceptés."
+      },
+      {
+        "q": "Faut-il un courrier de orientation de son médecin traitant ?",
+        "a": "Non. Le cabinet reçoit en consultation directe. Un courrier de votre médecin traitant ou de votre dentiste habituel peut toutefois être utile s'il contient des informations médicales pertinentes."
+      },
+      {
+        "q": "Quelle est la différence entre esthétique dentaire et éclaircissement ?",
+        "a": "L'esthétique dentaire désigne un domaine plus large qui vise l'harmonie du sourire (facettes, restauration esthétique, etc.). L'éclaircissement, ou blanchiment, est un acte spécifique consistant à clarifier la teinte des dents. Les deux peuvent s'inscrire dans une démarche globale."
+      },
+      {
+        "q": "L'éclaircissement dentaire est-il adapté à toutes les situations ?",
+        "a": "L'éclaircissement est précédé d'un examen clinique qui permet d'évaluer sa pertinence au regard de l'état bucco-dentaire. Selon les situations, il peut être déconseillé ou reporté. La décision est prise lors de la consultation."
+      },
+      {
+        "q": "En quoi consiste un implant dentaire ?",
+        "a": "Un implant dentaire est un dispositif destiné à remplacer une ou plusieurs dents absentes. La démarche est planifiée et intégrée à la globalité du traitement, en tenant compte de l'état du parodonte et de la denture adjacente."
+      },
+      {
+        "q": "Qu'est-ce que la parodontologie ?",
+        "a": "La parodontologie est la branche de la dentisterie consacrée aux gencives et aux tissus de soutien des dents (le parodonte). Un parodonte sain constitue le socle d'une denture durable et accompagne les autres traitements."
+      },
+      {
+        "q": "À quelle fréquence consulter pour un contrôle ?",
+        "a": "Une consultation de contrôle régulière est généralement recommandée, à une fréquence adaptée à votre situation bucco-dentaire. La périodicité est définie avec le praticien lors de votre suivi."
+      }
+    ],
+    "ctaTitle": "Votre question n'apparaît pas ici ?",
+    "ctaLink": "Écrire au cabinet"
+  },
+  "galeriePage": {
+    "hero": {
+      "eyebrow": "Galerie",
+      "title": "Galerie — le cabinet et les réalisations",
+      "subtitle": "Le cabinet, l'équipe et quelques réalisations."
+    },
+    "emptyMessage": "Aucune photo dans cette catégorie pour le moment.",
+    "items": [
+      {
+        "id": "1",
+        "label": "Le cabinet",
+        "sublabel": "votre ville",
+        "ratio": "wide",
+        "span": true,
+        "category": "Cabinet",
+        "image": "",
+        "alt": "Le docteur le praticien et son assistante dans la salle de soin du cabinet"
+      },
+      {
+        "id": "2",
+        "label": "Salle de soin",
+        "sublabel": "Cabinet",
+        "ratio": "landscape",
+        "category": "Cabinet",
+        "image": "",
+        "alt": "Salle de soin du cabinet, fauteuil et équipement"
+      },
+      {
+        "id": "3",
+        "label": "L'accueil",
+        "sublabel": "Cabinet",
+        "ratio": "landscape",
+        "category": "Cabinet",
+        "image": "",
+        "alt": "Accueil d'une patiente au comptoir du cabinet"
+      },
+      {
+        "id": "4",
+        "label": "Reconstruction et reprise d'anciennes couronnes",
+        "sublabel": "Avant / Après",
+        "ratio": "portrait",
+        "category": "Avant / Après",
+        "image": "",
+        "alt": "Avant/après : reconstruction, reprise des anciennes couronnes et travail sur la gencive"
+      },
+      {
+        "id": "5",
+        "label": "Une dent manquante, sans implant",
+        "sublabel": "Avant / Après",
+        "ratio": "portrait",
+        "category": "Avant / Après",
+        "image": "",
+        "alt": "Avant/après : dent manquante reconstruite à la fibre de verre et au composite"
+      },
+      {
+        "id": "6",
+        "label": "Empreinte numérique",
+        "sublabel": "Au cabinet",
+        "ratio": "landscape",
+        "category": "Cabinet",
+        "image": "",
+        "alt": "Empreinte numérique affichée à l'écran pendant la consultation"
+      },
+      {
+        "id": "7",
+        "label": "Analyse en consultation",
+        "sublabel": "Au cabinet",
+        "ratio": "portrait",
+        "category": "Cabinet",
+        "image": "",
+        "alt": "Analyse d'une photographie intra-buccale sur écran avec la patiente"
+      },
+      {
+        "id": "8",
+        "label": "Cabinet dentaire",
+        "sublabel": "Chirurgien-dentiste",
+        "ratio": "portrait",
+        "category": "Cabinet",
+        "image": "",
+        "alt": "Portrait du docteur le praticien"
+      },
+      {
+        "id": "9",
+        "label": "L'assistante",
+        "sublabel": "Équipe",
+        "ratio": "portrait",
+        "category": "Cabinet",
+        "image": "",
+        "alt": "Portrait de l'assistante dentaire du cabinet"
+      }
+    ]
+  },
+  "homePage": {
+    "hero": {
+      "badge": "{siteConfig.city} · {siteConfig.profession}",
+      "titleLine1": "L'art du sourire,",
+      "titleLine2": "en toute sérénité.",
+      "photoAlt": "Cabinet du Cabinet dentaire — vue d'ensemble de la salle de soin",
+      "discoverLink": "Découvrir les prestations",
+      "cardName": "Cabinet dentaire",
+      "cardLabel": "Chirurgien-dentiste"
+    },
+    "approche": {
+      "badge": "Notre approche",
+      "title": "Une prise en charge globale de votre traitement",
+      "paragraph": "Le cabinet pratique l'esthétique, l'implantologie et la parodontologie, en considérant chaque situation dans sa globalité afin de proposer un traitement adapté et mesuré.",
+      "link": "En savoir plus sur le Cabinet dentaire",
+      "photoAlt": "Équipe du cabinet du Cabinet dentaire dans une salle de soin"
+    },
+    "services": {
+      "badge": "Prestations",
+      "title": "Des soins guidés par la rigueur et la mesure",
+      "link": "Voir toutes les prestations",
+      "items": [
+        {
+          "title": "Soins",
+          "desc": "Soins conservateurs et restauration, dans le respect de la santé bucco-dentaire."
+        },
+        {
+          "title": "Esthétique dentaire",
+          "desc": "Démarche esthétique mesurée, au service de l'harmonie du sourire."
+        },
+        {
+          "title": "Implantologie",
+          "desc": "Remplacement dentaire par implant, dans une approche globale et planifiée."
+        },
+        {
+          "title": "Parodontologie",
+          "desc": "Prise en charge des gencives et du parodonte, socle d'une denture durable."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prenez rendez-vous avec le Cabinet dentaire",
+      "subtitle": "Consultations sur rendez-vous, à {siteConfig.city}. Réservation en ligne via Doctolib."
+    }
+  },
+  "mentionsLegalesPage": {
+    "hero": {
+      "eyebrow": "Informations légales",
+      "title": "Mentions légales",
+      "subtitle": "Informations relatives à l'éditeur et à l'hébergement du site, conformément aux obligations en vigueur."
+    },
+    "editeur": {
+      "title": "Éditeur du site",
+      "introPart1": "Le présent site est édité par ",
+      "introPart2": ", cabinet dentaire du ",
+      "introPart3": ", exerçant en qualité de ",
+      "introPart4": ".",
+      "labelDenomination": "Dénomination :",
+      "labelFormeJuridique": "Forme juridique :",
+      "valeurFormeJuridique": "",
+      "labelSiret": "SIRET :",
+      "labelSiren": "SIREN :",
+      "labelSiege": "Siège social :",
+      "labelTelephone": "Téléphone :",
+      "labelEmail": "Email :"
+    },
+    "directeur": {
+      "title": "Directeur de la publication",
+      "part1": "Le directeur de la publication est ",
+      "part2": ", ",
+      "part3": "."
+    },
+    "hebergement": {
+      "title": "Hébergement",
+      "text": "Le site est hébergé par un prestataire d'hébergement professionnel. Les coordonnées complètes de l'hébergeur peuvent être obtenues sur simple demande auprès du cabinet."
+    },
+    "profession": {
+      "title": "Profession réglementée",
+      "paragraph1": "La profession de chirurgien-dentiste est une profession réglementée. L'exercice est soumis au respect du Code de la santé publique et du Code de déontologie de la profession.",
+      "paragraph2": "La communication est encadrée par l'Ordre national des chirurgiens-dentistes. Le contenu du site est factuel et informatif, sans allégation d'avantage concurrentiel ni promesse de résultat."
+    },
+    "propriete": {
+      "title": "Propriété intellectuelle",
+      "part1": "L'ensemble des éléments du site (textes, mise en page, identité visuelle) est la propriété de ",
+      "part2": ", sauf mention contraire. Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation écrite préalable est interdite."
+    },
+    "responsabilite": {
+      "title": "Responsabilité",
+      "paragraph1": "Les informations diffusées sur ce site ont un caractère général et informatif. Elles ne se substituent pas à une consultation ou à un examen clinique. Seule une consultation permet d'établir un diagnostic et de proposer un traitement adapté.",
+      "part2": " ne saurait être tenu responsable d'une décision prise sur la seule base des informations présentes sur le site."
+    },
+    "liens": {
+      "title": "Liens vers d'autres sites",
+      "part1": "Le site peut contenir des liens vers des sites tiers (notamment Doctolib et Instagram). ",
+      "part2": " n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu."
+    },
+    "mediation": {
+      "title": "Médiation de la consommation",
+      "text": "Conformément aux dispositions du Code de la consommation, le cabinet adhère au service de médiation de la consommation. En cas de litige non résolu, le patient peut saisir le médiateur compétent."
+    },
+    "footer": {
+      "confidentialite": "Politique de confidentialité",
+      "contact": "Contact"
+    }
+  },
+  "notFoundPage": {
+    "code": "404",
+    "title": "Page introuvable",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "backHome": "Retour à l'accueil"
+  },
+  "servicesPage": {
+    "hero": {
+      "eyebrow": "Prestations",
+      "title": "Les prestations du cabinet",
+      "subtitle": "Esthétique dentaire, implantologie et parodontologie, dans une démarche globale et mesurée du traitement."
+    },
+    "services": {
+      "items": [
+        {
+          "id": "soins",
+          "title": "Soins",
+          "short": "Soins conservateurs et restauration des dents.",
+          "desc": "Les soins concernent le traitement des lésions carieuses, la restauration des dents et la préservation de leur intégrité. L'objectif est de maintenir une denture saine et fonctionnelle, en intervenant de manière ciblée et progressive.",
+          "points": [
+            "Traitement des lésions carieuses",
+            "Restauration conservatrice",
+            "Suivi et prévention bucco-dentaire"
+          ]
+        },
+        {
+          "id": "esthetique",
+          "title": "Esthétique dentaire",
+          "short": "Démarche esthétique au service de l'harmonie du sourire.",
+          "desc": "L'esthétique dentaire vise à améliorer l'apparence du sourire dans une démarche mesurée et cohérente avec la morphologie et la santé bucco-dentaire. Chaque proposition est adaptée à la situation clinique du patient.",
+          "points": [
+            "Facettes et restauration esthétique",
+            "Harmonisation de l'aspect du sourire",
+            "Approche respectueuse de la denture naturelle"
+          ]
+        },
+        {
+          "id": "eclaircissement",
+          "title": "Éclaircissement (blanchiment)",
+          "short": "Éclaircissement de la teinte des dents, encadré professionnellement.",
+          "desc": "L'éclaircissement dentaire, ou blanchiment, vise à clarifier la teinte des dents. Réalisé dans un cadre professionnel, il s'inscrit dans une démarche personnalisée après examen clinique.",
+          "points": [
+            "Évaluation préalable de la teinte",
+            "Protocole adapté au patient",
+            "Suivi professionnel du traitement"
+          ]
+        },
+        {
+          "id": "implantologie",
+          "title": "Implantologie",
+          "short": "Remplacement dentaire par implant, dans une approche planifiée.",
+          "desc": "L'implantologie consiste à remplacer une ou plusieurs dents absentes par un implant. La démarche est planifiée et intégrée à la globalité du traitement, en tenant compte de l'état du parodonte et de la denture adjacente.",
+          "points": [
+            "Remplacement de dents absentes",
+            "Planification globale du traitement",
+            "Coordination avec les autres soins nécessaires"
+          ]
+        },
+        {
+          "id": "parodontologie",
+          "title": "Parodontologie",
+          "short": "Prise en charge des gencives et du parodonte.",
+          "desc": "La parodontologie concerne la prise en charge des gencives et des tissus de soutien des dents. Un parodonte sain constitue le socle d'une denture durable et accompagne les autres traitements, notamment esthétiques et implantaires.",
+          "points": [
+            "Traitement des pathologies du parodonte",
+            "Suivi de la santé gingivale",
+            "Prévention et entretien sur la durée"
+          ]
+        }
+      ]
+    },
+    "prestationLabel": "Prestation",
+    "overview": {
+      "eyebrow": "En un coup d'œil",
+      "title": "Les cinq domaines de pratique"
+    },
+    "cta": {
+      "title": "Une question sur une prestation ?",
+      "questionLabel": "Poser une question"
+    }
+  },
+  "tarifsPage": {
+    "hero": {
+      "eyebrow": "Tarifs",
+      "title": "Tarifs sur demande",
+      "subtitle": "Le cabinet communique ses honoraires lors de la consultation, à l'issue de l'examen clinique et de l'établissement du devis."
+    },
+    "main": {
+      "eyebrow": "Pourquoi sur demande",
+      "title": "Des honoraires adaptés à votre situation",
+      "paragraph1": "Chaque traitement est propre à la situation clinique du patient. Le coût d'une prestation dépend de l'examen, des actes nécessaires et du plan de traitement établi.",
+      "paragraph2": "C'est pourquoi les honoraires vous sont communiqués en consultation, accompagnés d'un devis détaillé. N'hésitez pas à prendre rendez-vous pour échanger sur votre projet de soin.",
+      "contactButton": "Nous écrire"
+    },
+    "modalites": {
+      "title": "Modalités pratiques",
+      "items": [
+        {
+          "title": "Devis",
+          "description": "Un devis détaillé vous est remis avant tout traitement."
+        },
+        {
+          "title": "Paiement",
+          "description": ""
+        },
+        {
+          "title": "Réservation",
+          "description": "Les rendez-vous se prennent en ligne via Doctolib."
+        }
+      ]
+    },
+    "note": "Les informations tarifaires sont communiquées à titre individuel, conformément aux règles de la profession. Aucune grille tarifaire générique n'est affichée en ligne."
+  },
+  "cabinet": {
+    "name": "Cabinet dentaire",
+    "legalName": "",
+    "practitioner": "",
+    "profession": "Chirurgien-dentiste",
+    "specialty": "Esthétique dentaire · Implantologie · Parodontologie",
+    "tagline": "Une pratique attentive, centrée sur le soin et la prévention.",
+    "philosophy": "Prise en compte de la globalité dans le choix du traitement.",
+    "city": "",
+    "addressLine": "",
+    "addressStreet": "",
+    "addressPostalCode": "",
+    "addressLocality": "",
+    "phone": "",
+    "phoneHref": "",
+    "emailInternal": "",
+    "emailDisplay": "",
+    "siret": "",
+    "siretRaw": "",
+    "siren": "",
+    "siegesocial": "",
+    "hours": [
+      {
+        "day": "Lundi",
+        "time": ""
+      },
+      {
+        "day": "Mardi",
+        "time": ""
+      },
+      {
+        "day": "Mercredi",
+        "time": ""
+      },
+      {
+        "day": "Jeudi",
+        "time": ""
+      },
+      {
+        "day": "Vendredi",
+        "time": ""
+      },
+      {
+        "day": "Samedi",
+        "time": ""
+      },
+      {
+        "day": "Dimanche",
+        "time": ""
+      }
+    ],
+    "paymentMethods": "",
+    "instagramHandle": "",
+    "instagramUrl": "",
+    "doctolibUrl": "",
+    "logoSrc": "",
+    "mapsQuery": "",
+    "photos": {
+      "hero": "",
+      "approach": "",
+      "portrait": "",
+      "cabinet": ""
+    }
+  }
+}

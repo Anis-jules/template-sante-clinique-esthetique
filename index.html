@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titre du site</title>
+    <meta name="description" content="Description du site." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Titre du site" />
+    <meta property="og:description" content="Description du site." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- Hostivo — mesure de fréquentation anonyme (aucun cookie).
+         HOSTIVO_SITE_ID est remplacé par l'identifiant du site à la création ;
+         tant qu'il ne l'est pas, le script est inerte. -->
+    <script>
+      (function () {
+        var id = 'HOSTIVO_SITE_ID';
+        window.HOSTIVO_SITE_ID = id;
+        if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id)) return;
+        var envoyer = function () {
+          var corps = JSON.stringify({ site: id, path: location.pathname, referrer: document.referrer });
+          try {
+            if (!(navigator.sendBeacon && navigator.sendBeacon('https://app.hostivo.fr/api/track', corps)))
+              fetch('https://app.hostivo.fr/api/track', { method: 'POST', body: corps, keepalive: true });
+          } catch (e) {}
+        };
+        if (document.readyState === 'complete') envoyer();
+        else addEventListener('load', envoyer);
+      })();
+    </script>
+  </body>
+</html>
