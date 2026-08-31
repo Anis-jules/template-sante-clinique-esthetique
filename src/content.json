@@ -1,9 +1,9 @@
 {
   "seo": {
-    "titre_page": "Cabinet dentaire — soins, esthétique et implantologie",
-    "meta_description": "Cabinet dentaire : soins conservateurs, esthétique du sourire, implantologie et parodontie. Prise de rendez-vous en ligne.",
-    "og_titre": "Cabinet dentaire",
-    "og_description": "Soins dentaires, esthétique du sourire et implantologie.",
+    "titre_page": "Clinique de chirurgie et médecine esthétique",
+    "meta_description": "Clinique de chirurgie et de médecine esthétique : consultations, interventions du visage et de la silhouette, suivi post-opératoire. Rendez-vous par téléphone.",
+    "og_titre": "Clinique esthétique",
+    "og_description": "Chirurgie et médecine esthétique, dans une démarche mesurée et naturelle.",
     "og_image": ""
   },
   "theme": {
@@ -33,22 +33,22 @@
     "ariaCloseMenu": "Fermer le menu"
   },
   "photoPlaceholder": {
-    "logoName": "Cabinet dentaire",
-    "logoSubtitle": "Chirurgien-dentiste"
+    "logoName": "Clinique esthétique",
+    "logoSubtitle": "Chirurgien du visage"
   },
   "aboutPage": {
     "hero": {
       "eyebrow": "Le praticien",
-      "titlePrefix": "Le Cabinet dentaire, chirurgien-dentiste à ",
-      "subtitle": "Pratique de l'esthétique, de l'implantologie et de la parodontologie, avec une attention portée à la globalité du traitement."
+      "titlePrefix": "La Clinique esthétique, à ",
+      "subtitle": "Chirurgie et médecine esthétique, avec une attention portée à l'équilibre naturel du visage et de la silhouette."
     },
     "bio": {
       "label": "Présentation",
-      "title": "Un parcours dédié à la santé et à l'esthétique du sourire",
-      "paragraph1": "Le Cabinet dentaire exerce en tant que chirurgien-dentiste à votre ville. Sa pratique s'articule autour de trois domaines : l'esthétique dentaire, l'implantologie et la parodontologie.",
-      "paragraph2": "Chaque prise en charge s'inscrit dans une réflexion globale : les choix thérapeutiques sont guidés par la situation clinique du patient, ses besoins et la préservation de sa santé bucco-dentaire sur le long terme. Cette approche vise à proposer un traitement adapté, sans précipitation ni surenchère.",
-      "paragraph3": "Le cabinet accueille les patients souhaitant prendre en main la santé et l'esthétique de leur sourire, dans un cadre calme et professionnel.",
-      "portraitAlt": "Cabinet dentaire, chirurgien-dentiste à votre ville"
+      "title": "Un parcours dédié à l'harmonie du visage",
+      "paragraph1": "La Clinique esthétique réunit consultation, chirurgie et médecine esthétique à votre ville. La pratique s'articule autour de trois domaines : la chirurgie du visage, la chirurgie de la silhouette et la médecine esthétique.",
+      "paragraph2": "Chaque prise en charge s'inscrit dans une réflexion globale : les choix sont guidés par la situation clinique du patient, ses attentes et la préservation d'un résultat naturel sur le long terme. Cette approche vise une solution adaptée, sans précipitation ni surenchère.",
+      "paragraph3": "La clinique accueille les patients qui souhaitent corriger ce qui les gêne, dans un cadre calme et professionnel.",
+      "portraitAlt": "Le praticien de la Clinique esthétique à votre ville"
     },
     "pillars": {
       "eyebrow": "Philosophie de soin",
@@ -62,7 +62,7 @@
         {
           "icon": "GraduationCap",
           "title": "Une formation continue",
-          "desc": "Le Cabinet dentaire approfondit régulièrement sa pratique dans les domaines de l'esthétique, de l'implantologie et de la parodontologie."
+          "desc": "Le praticien approfondit régulièrement sa pratique dans les domaines de la chirurgie et de la médecine esthétique."
         },
         {
           "icon": "Sparkles",
@@ -72,19 +72,19 @@
         {
           "icon": "Stethoscope",
           "title": "Un cadre apaisant",
-          "desc": "Le cabinet, à votre ville, est pensé pour offrir un environnement calme et rassurant, adapté au soin dentaire."
+          "desc": "La clinique, à votre ville, est pensée pour offrir un environnement calme et rassurant, adapté à la consultation comme au suivi."
         }
       ]
     },
     "formation": {
       "label": "Formation",
       "title": "Une pratique nourrie par une formation continue",
-      "paragraph1": "Le Cabinet dentaire approfondit régulièrement ses compétences cliniques dans les domaines de l'esthétique dentaire, de l'implantologie et de la parodontologie. Cette formation continue permet de proposer des soins alignés sur les pratiques actuelles.",
+      "paragraph1": "Le praticien approfondit régulièrement ses compétences cliniques en chirurgie du visage, chirurgie de la silhouette et médecine esthétique. Cette formation continue permet de proposer des techniques alignées sur les pratiques actuelles.",
       "paragraph2": "Le détail des diplômes, universités et formations complémentaires pourra être ajouté ici. Cette section est volontairement sobre et factuelle, conformément aux règles déontologiques de la profession.",
-      "cabinetAlt": "Salle de soin du cabinet du Cabinet dentaire à votre ville"
+      "cabinetAlt": "Salle de soin de la Clinique esthétique à votre ville"
     },
     "cta": {
-      "title": "Souhaitez-vous rencontrer le Cabinet dentaire ?",
+      "title": "Souhaitez-vous rencontrer le praticien ?",
       "contactLabel": "Nous contacter"
     }
   },
@@ -92,7 +92,7 @@
     "hero": {
       "eyebrow": "Blog",
       "title": "Le journal du cabinet",
-      "subtitle": "Informations pratiques et éclairages factuels sur la santé et l'esthétique dentaire. Les articles seront ajoutés prochainement."
+      "subtitle": "Informations pratiques et éclairages factuels sur la chirurgie et la médecine esthétique. Les articles seront ajoutés au fil du temps."
     },
     "readMore": "Lire l'article",
     "readTimeSuffix": "de lecture",
@@ -204,12 +204,11 @@
     },
     "subjects": {
       "items": [
-        "Soins",
-        "Esthétique dentaire",
-        "Éclaircissement (blanchiment)",
-        "Implantologie",
-        "Parodontologie",
-        "Autre demande"
+        "Une consultation",
+        "Chirurgie du visage",
+        "Chirurgie de la silhouette",
+        "Médecine esthétique",
+        "Une autre question"
       ]
     },
     "form": {
@@ -263,28 +262,28 @@
         "a": "Le cabinet accepte le paiement par carte bancaire et par virement. Les chèques et les espèces ne sont pas acceptés."
       },
       {
-        "q": "Faut-il un courrier de orientation de son médecin traitant ?",
-        "a": "Non. Le cabinet reçoit en consultation directe. Un courrier de votre médecin traitant ou de votre dentiste habituel peut toutefois être utile s'il contient des informations médicales pertinentes."
+        "q": "Faut-il être adressé par un médecin ?",
+        "a": "Non. La clinique reçoit en consultation directe. Un courrier de votre médecin traitant est utile mais n'est pas nécessaire pour prendre rendez-vous."
       },
       {
-        "q": "Quelle est la différence entre esthétique dentaire et éclaircissement ?",
-        "a": "L'esthétique dentaire désigne un domaine plus large qui vise l'harmonie du sourire (facettes, restauration esthétique, etc.). L'éclaircissement, ou blanchiment, est un acte spécifique consistant à clarifier la teinte des dents. Les deux peuvent s'inscrire dans une démarche globale."
+        "q": "Quelle est la différence entre chirurgie et médecine esthétique ?",
+        "a": "La médecine esthétique regroupe les actes sans chirurgie — injections, traitements de la peau — aux résultats visibles rapidement mais temporaires. La chirurgie modifie durablement les structures, sous anesthésie, avec des suites opératoires à prévoir."
       },
       {
-        "q": "L'éclaircissement dentaire est-il adapté à toutes les situations ?",
-        "a": "L'éclaircissement est précédé d'un examen clinique qui permet d'évaluer sa pertinence au regard de l'état bucco-dentaire. Selon les situations, il peut être déconseillé ou reporté. La décision est prise lors de la consultation."
+        "q": "Comment se déroule la première consultation ?",
+        "a": "Elle sert à comprendre votre demande, à examiner la situation et à vous expliquer ce qui est réalisable. Un devis écrit vous est remis, ainsi qu'un délai de réflexion légal avant toute intervention."
       },
       {
-        "q": "En quoi consiste un implant dentaire ?",
-        "a": "Un implant dentaire est un dispositif destiné à remplacer une ou plusieurs dents absentes. La démarche est planifiée et intégrée à la globalité du traitement, en tenant compte de l'état du parodonte et de la denture adjacente."
+        "q": "Les interventions sont-elles prises en charge ?",
+        "a": "Les actes purement esthétiques ne sont pas pris en charge par l'Assurance Maladie. Certaines interventions à visée fonctionnelle peuvent l'être, parfois sous condition d'entente préalable. Le devis précise chaque poste."
       },
       {
-        "q": "Qu'est-ce que la parodontologie ?",
-        "a": "La parodontologie est la branche de la dentisterie consacrée aux gencives et aux tissus de soutien des dents (le parodonte). Un parodonte sain constitue le socle d'une denture durable et accompagne les autres traitements."
+        "q": "Quelles suites faut-il prévoir ?",
+        "a": "Elles dépendent de l'intervention. Elles vous sont détaillées en consultation, avant toute décision, ainsi que le calendrier du suivi post-opératoire."
       },
       {
         "q": "À quelle fréquence consulter pour un contrôle ?",
-        "a": "Une consultation de contrôle régulière est généralement recommandée, à une fréquence adaptée à votre situation bucco-dentaire. La périodicité est définie avec le praticien lors de votre suivi."
+        "a": "Un rendez-vous de contrôle est programmé après chaque intervention, à une fréquence adaptée à votre situation. La clinique reste joignable entre deux rendez-vous."
       }
     ],
     "ctaTitle": "Votre question n'apparaît pas ici ?",
@@ -364,8 +363,8 @@
       },
       {
         "id": "8",
-        "label": "Cabinet dentaire",
-        "sublabel": "Chirurgien-dentiste",
+        "label": "Clinique esthétique",
+        "sublabel": "Chirurgien du visage",
         "ratio": "portrait",
         "category": "Cabinet",
         "image": "",
@@ -378,26 +377,26 @@
         "ratio": "portrait",
         "category": "Cabinet",
         "image": "",
-        "alt": "Portrait de l'assistante dentaire du cabinet"
+        "alt": "Portrait d'une assistante de la clinique"
       }
     ]
   },
   "homePage": {
     "hero": {
       "badge": "{siteConfig.city} · {siteConfig.profession}",
-      "titleLine1": "L'art du sourire,",
+      "titleLine1": "L'équilibre du visage,",
       "titleLine2": "en toute sérénité.",
-      "photoAlt": "Cabinet du Cabinet dentaire — vue d'ensemble de la salle de soin",
+      "photoAlt": "La Clinique esthétique — vue d'ensemble de l'accueil",
       "discoverLink": "Découvrir les prestations",
-      "cardName": "Cabinet dentaire",
-      "cardLabel": "Chirurgien-dentiste"
+      "cardName": "Clinique esthétique",
+      "cardLabel": "Chirurgien du visage"
     },
     "approche": {
       "badge": "Notre approche",
       "title": "Une prise en charge globale de votre traitement",
-      "paragraph": "Le cabinet pratique l'esthétique, l'implantologie et la parodontologie, en considérant chaque situation dans sa globalité afin de proposer un traitement adapté et mesuré.",
-      "link": "En savoir plus sur le Cabinet dentaire",
-      "photoAlt": "Équipe du cabinet du Cabinet dentaire dans une salle de soin"
+      "paragraph": "La clinique pratique la chirurgie du visage, la chirurgie de la silhouette et la médecine esthétique, en considérant chaque situation dans sa globalité afin de proposer une solution adaptée et mesurée.",
+      "link": "En savoir plus sur la clinique",
+      "photoAlt": "L'équipe de la Clinique esthétique"
     },
     "services": {
       "badge": "Prestations",
@@ -405,25 +404,25 @@
       "link": "Voir toutes les prestations",
       "items": [
         {
-          "title": "Soins",
-          "desc": "Soins conservateurs et restauration, dans le respect de la santé bucco-dentaire."
+          "title": "Chirurgie du visage",
+          "desc": "Interventions du nez, des paupières, des oreilles et de l'ovale du visage."
         },
         {
-          "title": "Esthétique dentaire",
-          "desc": "Démarche esthétique mesurée, au service de l'harmonie du sourire."
+          "title": "Chirurgie de la silhouette",
+          "desc": "Interventions du corps, dans une démarche mesurée et planifiée."
         },
         {
-          "title": "Implantologie",
-          "desc": "Remplacement dentaire par implant, dans une approche globale et planifiée."
+          "title": "Médecine esthétique",
+          "desc": "Injections et traitements sans chirurgie, aux résultats naturels."
         },
         {
-          "title": "Parodontologie",
-          "desc": "Prise en charge des gencives et du parodonte, socle d'une denture durable."
+          "title": "Suivi post-opératoire",
+          "desc": "Un accompagnement structuré, de la consultation au résultat."
         }
       ]
     },
     "cta": {
-      "title": "Prenez rendez-vous avec le Cabinet dentaire",
+      "title": "Prenez rendez-vous à la clinique",
       "subtitle": "Consultations sur rendez-vous, à {siteConfig.city}. Réservation en ligne via Doctolib."
     }
   },
@@ -436,7 +435,7 @@
     "editeur": {
       "title": "Éditeur du site",
       "introPart1": "Le présent site est édité par ",
-      "introPart2": ", cabinet dentaire du ",
+      "introPart2": ", ",
       "introPart3": ", exerçant en qualité de ",
       "introPart4": ".",
       "labelDenomination": "Dénomination :",
@@ -460,8 +459,8 @@
     },
     "profession": {
       "title": "Profession réglementée",
-      "paragraph1": "La profession de chirurgien-dentiste est une profession réglementée. L'exercice est soumis au respect du Code de la santé publique et du Code de déontologie de la profession.",
-      "paragraph2": "La communication est encadrée par l'Ordre national des chirurgiens-dentistes. Le contenu du site est factuel et informatif, sans allégation d'avantage concurrentiel ni promesse de résultat."
+      "paragraph1": "La profession de médecin est une profession réglementée. L'exercice est soumis au respect du Code de la santé publique et du Code de déontologie médicale.",
+      "paragraph2": "La communication est encadrée par l'Ordre national des médecins. Le contenu du site est factuel et informatif, sans allégation d'avantage concurrentiel ni promesse de résultat."
     },
     "propriete": {
       "title": "Propriété intellectuelle",
@@ -497,63 +496,63 @@
     "hero": {
       "eyebrow": "Prestations",
       "title": "Les prestations du cabinet",
-      "subtitle": "Esthétique dentaire, implantologie et parodontologie, dans une démarche globale et mesurée du traitement."
+      "subtitle": "Chirurgie du visage, chirurgie de la silhouette et médecine esthétique, dans une démarche globale et mesurée."
     },
     "services": {
       "items": [
         {
-          "id": "soins",
-          "title": "Soins",
-          "short": "Soins conservateurs et restauration des dents.",
-          "desc": "Les soins concernent le traitement des lésions carieuses, la restauration des dents et la préservation de leur intégrité. L'objectif est de maintenir une denture saine et fonctionnelle, en intervenant de manière ciblée et progressive.",
+          "id": "chirurgie-visage",
+          "title": "Chirurgie du visage",
+          "short": "Corriger ce qui gêne, sans effacer les traits.",
+          "desc": "La chirurgie du visage regroupe les interventions qui modifient durablement une structure : le nez, les paupières, les oreilles ou l'ovale du visage. Chaque geste est décidé après examen, avec un objectif de résultat naturel.",
           "points": [
-            "Traitement des lésions carieuses",
-            "Restauration conservatrice",
-            "Suivi et prévention bucco-dentaire"
+            "Rhinoplastie",
+            "Chirurgie des paupières",
+            "Chirurgie des oreilles"
           ]
         },
         {
-          "id": "esthetique",
-          "title": "Esthétique dentaire",
-          "short": "Démarche esthétique au service de l'harmonie du sourire.",
-          "desc": "L'esthétique dentaire vise à améliorer l'apparence du sourire dans une démarche mesurée et cohérente avec la morphologie et la santé bucco-dentaire. Chaque proposition est adaptée à la situation clinique du patient.",
+          "id": "chirurgie-silhouette",
+          "title": "Chirurgie de la silhouette",
+          "short": "Interventions du corps, planifiées et mesurées.",
+          "desc": "Les interventions de la silhouette répondent à une demande précise, après un examen clinique et un temps de réflexion. Le devis détaille l'acte, l'anesthésie et les frais de clinique.",
           "points": [
-            "Facettes et restauration esthétique",
-            "Harmonisation de l'aspect du sourire",
-            "Approche respectueuse de la denture naturelle"
+            "Interventions du corps",
+            "Devis écrit détaillé",
+            "Suivi post-opératoire"
           ]
         },
         {
-          "id": "eclaircissement",
-          "title": "Éclaircissement (blanchiment)",
-          "short": "Éclaircissement de la teinte des dents, encadré professionnellement.",
-          "desc": "L'éclaircissement dentaire, ou blanchiment, vise à clarifier la teinte des dents. Réalisé dans un cadre professionnel, il s'inscrit dans une démarche personnalisée après examen clinique.",
+          "id": "medecine-esthetique",
+          "title": "Médecine esthétique",
+          "short": "Sans chirurgie, aux résultats naturels.",
+          "desc": "La médecine esthétique regroupe les actes réalisés sans chirurgie : injections d'acide hyaluronique, toxine botulique, traitements de la peau. Les résultats sont visibles rapidement et temporaires.",
           "points": [
-            "Évaluation préalable de la teinte",
-            "Protocole adapté au patient",
-            "Suivi professionnel du traitement"
+            "Acide hyaluronique",
+            "Toxine botulique",
+            "Traitements de la peau"
           ]
         },
         {
-          "id": "implantologie",
-          "title": "Implantologie",
-          "short": "Remplacement dentaire par implant, dans une approche planifiée.",
-          "desc": "L'implantologie consiste à remplacer une ou plusieurs dents absentes par un implant. La démarche est planifiée et intégrée à la globalité du traitement, en tenant compte de l'état du parodonte et de la denture adjacente.",
+          "id": "consultation",
+          "title": "Consultation",
+          "short": "Le point de départ de toute prise en charge.",
+          "desc": "La consultation permet de comprendre votre demande, d'examiner la situation et d'expliquer ce qui est réalisable. Un devis écrit vous est remis, avec le délai de réflexion prévu par la loi.",
           "points": [
-            "Remplacement de dents absentes",
-            "Planification globale du traitement",
-            "Coordination avec les autres soins nécessaires"
+            "Examen clinique",
+            "Devis écrit",
+            "Délai de réflexion"
           ]
         },
         {
-          "id": "parodontologie",
-          "title": "Parodontologie",
-          "short": "Prise en charge des gencives et du parodonte.",
-          "desc": "La parodontologie concerne la prise en charge des gencives et des tissus de soutien des dents. Un parodonte sain constitue le socle d'une denture durable et accompagne les autres traitements, notamment esthétiques et implantaires.",
+          "id": "suivi",
+          "title": "Suivi post-opératoire",
+          "short": "Un accompagnement jusqu'au résultat.",
+          "desc": "Le suivi fait partie de l'intervention : rendez-vous de contrôle programmés, conseils de cicatrisation et disponibilité en cas de question.",
           "points": [
-            "Traitement des pathologies du parodonte",
-            "Suivi de la santé gingivale",
-            "Prévention et entretien sur la durée"
+            "Rendez-vous de contrôle",
+            "Conseils de cicatrisation",
+            "Disponibilité"
           ]
         }
       ]
@@ -601,12 +600,12 @@
     "note": "Les informations tarifaires sont communiquées à titre individuel, conformément aux règles de la profession. Aucune grille tarifaire générique n'est affichée en ligne."
   },
   "cabinet": {
-    "name": "Cabinet dentaire",
+    "name": "Clinique esthétique",
     "legalName": "",
     "practitioner": "",
-    "profession": "Chirurgien-dentiste",
-    "specialty": "Esthétique dentaire · Implantologie · Parodontologie",
-    "tagline": "Une pratique attentive, centrée sur le soin et la prévention.",
+    "profession": "Chirurgien du visage",
+    "specialty": "Chirurgie du visage · Chirurgie de la silhouette · Médecine esthétique",
+    "tagline": "Une pratique attentive, centrée sur l'équilibre et le naturel.",
     "philosophy": "Prise en compte de la globalité dans le choix du traitement.",
     "city": "",
     "addressLine": "",
