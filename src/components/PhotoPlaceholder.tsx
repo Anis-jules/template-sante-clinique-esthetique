@@ -71,7 +71,7 @@ export function LogoPlaceholder({ className = '', size = 44, showText = true }: 
         style={{ width: size, height: size, fontSize: size * 0.5 }}
         aria-hidden="true"
       >
-        L
+        {(c.logoName || '?').trim().charAt(0).toUpperCase()}
       </div>
       {showText && (
         <div className="leading-tight">
