@@ -185,7 +185,7 @@ export function HomePage() {
           </Reveal>
           <Reveal delay={120}>
             <p className="mt-5 text-lg text-beige-200/80 font-light max-w-xl mx-auto">
-              Consultations sur rendez-vous, à {siteConfig.city}. Réservation en ligne via Doctolib.
+              {c.cta.subtitle}
             </p>
           </Reveal>
           <Reveal delay={200}>
