@@ -334,7 +334,7 @@ export function ContactPage() {
           <div className="mt-12 rounded-[2rem] overflow-hidden border border-beige-200 shadow-sm">
             <iframe
               title={c.map.title}
-              src={`https://www.openstreetmap.org/export/embed.html?bbox=4.78%2C46.08%2C4.82%2C46.10&layer=mapnik&marker=46.0907%2C4.7990`}
+              src={`https://www.google.com/maps?q=${encodeURIComponent(siteConfig.mapsQuery || siteConfig.addressLine)}&output=embed`}
               className="w-full h-[380px] border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
