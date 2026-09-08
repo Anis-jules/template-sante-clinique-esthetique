@@ -51,7 +51,7 @@ try {
     location: adresse, defaultView: globalThis.window, readyState: 'complete',
     documentElement: { style: faussetteStyle, classList: { add: rien, remove: rien, contains: () => false } },
     body: { style: {}, classList: { add: rien, remove: rien, contains: () => false }, appendChild: rien },
-    head: { appendChild: rien },
+    head: { appendChild: rien, querySelector: () => null, querySelectorAll: () => [], insertBefore: rien },
     querySelector: () => null, querySelectorAll: () => [], getElementById: () => null,
     createElement: () => ({ style: {}, setAttribute: rien, appendChild: rien, classList: { add: rien } }),
     addEventListener: rien, removeEventListener: rien,
@@ -90,15 +90,22 @@ try {
   // inventée vaudrait moins que rien (elle serait explorée puis introuvable).
   const POINT = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
   await esbuild.build({
-    entryPoints: [join(racine, 'src', 'App.tsx')],
+    // Le point d'entrée s'écrit .tsx ou .jsx selon les moules.
+    entryPoints: [['App.tsx', 'App.jsx'].map((f) => join(racine, 'src', f)).find((f) => existsSync(f))],
     outfile: bundle, bundle: true, format: 'esm', platform: 'node',
     logLevel: 'silent', jsx: 'automatic', ...(tsconfig ? { tsconfig } : {}),
+    // Des dépendances appellent `require` au chargement, or il n'existe pas
+    // dans un module ESM : on le leur fabrique.
+    banner: { js: "import{createRequire as ___cr}from'node:module';const require=___cr(import.meta.url);" },
     // `import.meta.env` n'existe que sous Vite : sans ces valeurs, tout code
     // qui lit import.meta.env.DEV s'arrête sur « undefined ».
+    // `import.meta.env` est une invention de Vite : hors de Vite il n'existe
+    // pas, et tout code qui lit `import.meta.env.DEV` ou une variable VITE_…
+    // s'arrête sur « undefined ». On remplace l'objet ENTIER — définir en
+    // plus les clés une à une ferait échouer esbuild, les deux règles se
+    // recouvrant.
     define: {
-      'import.meta.env.DEV': 'false', 'import.meta.env.PROD': 'true',
-      'import.meta.env.MODE': '"production"', 'import.meta.env.BASE_URL': '"/"',
-      'import.meta.env.SSR': 'true',
+      'import.meta.env': '{"DEV":false,"PROD":true,"SSR":true,"MODE":"production","BASE_URL":"/"}',
     },
     external: ['react', 'react-dom', 'react-dom/*', 'react/*',
                'react-router', 'react-router/*', 'react-router-dom', 'react-router-dom/*', 'lucide-react'],
@@ -181,6 +188,20 @@ try {
 
   writeFileSync(cible, avant + MARQUE_DEBUT + rendu + MARQUE_FIN + apres)
   console.log(`pré-rendu : ${Math.round(rendu.length / 1024)} ko réécrits`)
+  // ⚠ Sortir explicitement, comme le font les quatre chemins d'échec.
+  //
+  // Charger le site fabrique un `MessagePort` (mesuré : aucune poignée avant
+  // `import(bundle)`, une après). Node ne s'arrête pas tant qu'une poignée
+  // vit : sans cette ligne le script rendait la main à personne et `npm run
+  // build` pendait pour toujours — mais SEULEMENT quand le pré-rendu avait
+  // réussi, puisque tous les autres chemins sortaient déjà. Un défaut à
+  // l'envers, donc invisible : on ne remarque pas ce qui ne casse que quand
+  // tout va bien.
+  //
+  // Sans conséquence sur l'image de build de Cloudflare (nodejs@22.16.0, où
+  // le processus s'arrête tout de même) ; en local sous Node 24 le build
+  // pendait à l'infini. Trouvé le 08/09/2026 sur anaisrg_coach.
+  process.exit(0)
 } catch (e) {
   console.warn('pré-rendu ignoré :', String(e.message).slice(0, 140))
   process.exit(0)
