@@ -138,30 +138,6 @@ export function Footer() {
         </div>
       </div>
     
-      <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '2rem', paddingBottom: '0.5rem' }}>
-        <a
-          href="https://hostivo.fr"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Site hébergé par Hostivo"
-          style={{
-            display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '7px',
-            opacity: 0.55, transition: 'opacity 0.25s', textDecoration: 'none',
-          }}
-          onMouseEnter={(e) => { (e.currentTarget).style.opacity = '0.9'; }}
-          onMouseLeave={(e) => { (e.currentTarget).style.opacity = '0.55'; }}
-        >
-          <span style={{ fontSize: '11px', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.72)', fontWeight: 400 }}>
-            Hébergé par
-          </span>
-          <img
-            src="/hostivo-clair.png"
-            alt="Hostivo"
-            loading="lazy"
-            style={{ height: '20px', width: 'auto', display: 'block' }}
-          />
-        </a>
-      </div>
     </footer>
   );
 }
