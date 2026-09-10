@@ -26,9 +26,33 @@ function seoFromContentJson(): Plugin {
     /^https?:\/\//.test(u) ? u : siteUrl ? siteUrl + (u.startsWith('/') ? u : `/${u}`) : '';
 
   const nom = asText(cab.name) || asText(seo.titre_page) || 'Hostivo';
-  const initiale = (nom.replace(/[^\p{L}\p{N}]/gu, '')[0] ?? 'H').toUpperCase();
   const couleur = asText(theme.couleur_bouton) || asText(theme.couleur_titre) || '#3B30E5';
-  const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="${couleur}"/><text x="32" y="43" font-family="Georgia,serif" font-size="34" font-weight="700" text-anchor="middle" fill="#ffffff">${initiale}</text></svg>`;
+  /*
+   * L'ICÔNE DE L'ONGLET.
+   *
+   * ⚠⚠ Ce plugin efface TOUTE déclaration d'icône de index.html : ce qui est
+   * décidé ici est ce que la cliente verra, rien d'autre ne survit au build.
+   *
+   * Deux défauts corrigés le 10/09/2026, après mesure des 76 sites du parc :
+   *  - la lettre était écrite en BLANC quoi qu'il arrive. Une marque à couleur
+   *    claire donnait donc une lettre invisible. Le contraste est mesuré.
+   *  - une SEULE initiale, prise sur le premier mot. « Miss Bindou » donnait
+   *    « M ». Deux initiales distinguent bien mieux deux onglets côte à côte.
+   */
+  const petits = new Set(['de','du','des','la','le','les','a','à','au','aux','et','en','by','the','of','chez','&','l']);
+  const mots = String(nom).split(/[—|–]/)[0].split(/[\s'’.]+/)
+    .map((m) => m.replace(/[^\p{L}\p{N}]/gu, '')).filter((m) => m && !petits.has(m.toLowerCase()));
+  const initiale = (mots.length === 0 ? 'H'
+    : mots.length === 1 ? (mots[0].length <= 3 ? mots[0] : mots[0].slice(0, 2))
+    : mots[0][0] + mots[1][0]).toUpperCase();
+  const couleurFavicon = theme.couleur_bouton ?? theme.couleur_titre ?? '#3B30E5';
+  const clarte = (hex) => { const n = String(hex).replace('#',''); if (n.length < 6) return 0;
+    const v = [0,2,4].map((i) => { const c = parseInt(n.slice(i,i+2),16)/255; return c <= 0.03928 ? c/12.92 : Math.pow((c+0.055)/1.055, 2.4); });
+    return 0.2126*v[0] + 0.7152*v[1] + 0.0722*v[2]; };
+  const ecart = (a, b) => { const x = clarte(a), y = clarte(b); const [h, l] = x > y ? [x, y] : [y, x]; return (h+0.05)/(l+0.05); };
+  const encreFavicon = ecart(couleurFavicon, '#FFFFFF') >= ecart(couleurFavicon, '#14120F') ? '#FFFFFF' : '#14120F';
+  const tailleFavicon = initiale.length >= 3 ? 26 : initiale.length === 2 ? 32 : 38;
+  const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="${couleurFavicon}"/><text x="32" y="32" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="${tailleFavicon}" font-weight="600" text-anchor="middle" dominant-baseline="central" fill="${encreFavicon}">${initiale}</text></svg>`;
   const faviconTag = `<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,${encodeURIComponent(faviconSvg)}" />`;
 
   // Règle Hostivo : sans visuel fourni par le client, aucune balise d'image.
