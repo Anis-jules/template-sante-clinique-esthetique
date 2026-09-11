@@ -81,6 +81,13 @@ function seoFromContentJson(): Plugin {
   return {
     name: 'seo-from-content-json',
     transformIndexHtml(html) {
+      // ⚠ `process.env.URL` est une variable NETLIFY : chez Cloudflare elle
+      // n'existe pas, et ce greffon effaçait alors la canonique posée dans le
+      // gabarit par l'app au moment de la mise en ligne. Chaque site partait
+      // donc SANS adresse officielle pour Google. Sans adresse connue au
+      // build, on garde désormais ce que le gabarit porte déjà.
+      const canoniqueDuGabarit = siteUrl ? '' : (html.match(/<link rel="canonical"[^>]*>/i)?.[0] ?? '');
+      const ogUrlDuGabarit = siteUrl ? '' : (html.match(/<meta property="og:url"[^>]*>/i)?.[0] ?? '');
       html = html
         .replace(/[ \t]*<link[^>]*rel="[^"]*icon[^"]*"[^>]*>\s*\n?/gi, '')
         .replace(/[ \t]*<meta property="og:image"[^>]*>\s*\n?/gi, '')
@@ -94,8 +101,8 @@ function seoFromContentJson(): Plugin {
         .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${seo.og_description ?? seo.meta_description ?? ''}$2`);
       const tags = [
         faviconTag,
-        siteUrl ? `<link rel="canonical" href="${siteUrl}/" />` : '',
-        siteUrl ? `<meta property="og:url" content="${siteUrl}/" />` : '',
+        siteUrl ? `<link rel="canonical" href="${siteUrl}/" />` : canoniqueDuGabarit,
+        siteUrl ? `<meta property="og:url" content="${siteUrl}/" />` : ogUrlDuGabarit,
         ogImage ? `<meta property="og:image" content="${ogImage}" />` : '',
         `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`,
       ].filter(Boolean).map((t) => `    ${t}`).join('\n');
